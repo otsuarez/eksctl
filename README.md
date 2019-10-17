@@ -15,4 +15,20 @@ make build
 make push
 ```
 
+# why debian
+
+
+```
+SessionManagerPlugin is not found. Please refer to SessionManager Documentation here: http://docs.aws.amazon.com/console/systems-manager/session-manager-plugin-not-found
+```
+
+using alpine:
+```sh
+~ # cat /etc/os-release
+NAME="Alpine Linux"
+```
+
+> Currently, we don't support Alpine Linux OS officially.
+
+https://github.com/aws/amazon-ssm-agent/issues/140
 
