@@ -18,7 +18,7 @@ build: ## docker build image
 	@docker build -t $(CI_PROJECT_NAMESPACE)/$(CI_PROJECT_NAME) .
 
 run: ## run a container using the image
-	@docker run --rm -it $(CI_PROJECT_NAMESPACE)/$(CI_PROJECT_NAME) /bin/sh
+	@docker run --rm -it $(CI_PROJECT_NAMESPACE)/$(CI_PROJECT_NAME) /bin/bash
 
 push: ##  push to docker hub
 	@docker push $(CI_PROJECT_NAMESPACE)/$(CI_PROJECT_NAME)
