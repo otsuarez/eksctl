@@ -9,7 +9,7 @@ RUN tar xfz eksctl_${UNAME}_amd64.tar.gz -C /tmp  && \
     rm eksctl*_amd64.tar.gz
 
 RUN apt update && \
-    apt install -y --no-install-recommends python3-pip python3-setuptools curl && \
+    apt install -y --no-install-recommends python3-pip python3-setuptools curl git && \
     pip3 install wheel --upgrade && \
     pip3 install awscli --upgrade
 
