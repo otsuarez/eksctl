@@ -31,3 +31,6 @@ RUN curl -s https://api.github.com/repos/kubernetes-sigs/kustomize/releases |\
     mv ./kustomize /usr/local/bin/kustomize && \
     rm kustomize_*_linux_amd64.tar.gz
 
+RUN curl -so aws-iam-authenticator https://amazon-eks.s3-us-west-2.amazonaws.com/1.14.6/2019-08-22/bin/linux/amd64/aws-iam-authenticator && \
+    chmod +x ./aws-iam-authenticator && \
+    mv aws-iam-authenticator /usr/local/bin/aws-iam-authenticator
